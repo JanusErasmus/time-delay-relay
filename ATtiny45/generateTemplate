@@ -1,0 +1,11 @@
+#!/bin/bash
+
+md5=($(md5sum delayRelay.hex))
+
+template=template.xml
+
+echo '<?xml version="1.0" encoding="UTF-8" ?>' > $template
+echo '<testProfile version="3.0">' >> $template
+echo '	<profileLabel>!!! Delay Relay !!!</profileLabel>' >> $template
+echo '	<binary md5sum="'${md5}'">delayRelay.hex</binary>' >> $template
+cat ../templateTail.xml >> $template

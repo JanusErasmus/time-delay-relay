@@ -1,0 +1,31 @@
+	<cap>
+        <boundary interval="1" low="4500" high="8500"/>
+        <boundary interval="2" low="9500" high="15000"/>
+        <boundary interval="3" low="13500" high="18500"/>
+        <boundary interval="4" low="16000" high="21000"/>
+        <boundary interval="5" low="17000" high="23000"/>
+        <boundary interval="6" low="18500" high="24000"/>
+        <boundary interval="7" low="19000" high="24000"/>
+        <boundary interval="8" low="19000" high="24500"/>
+        <boundary interval="9" low="19000" high="24500"/>
+        <boundary interval="10" low="19000" high="24500"/>
+	</cap>
+	<motor>
+        <boundary low="5300" high="5500"/>
+	</motor>
+	<cpu>
+        <boundary low="2900" high="3100"/>
+	</cpu>
+    <tests><!-- Test ID corresponds with the eTestID enumeration of TestProfile -->
+        <test id="1">Read serial through SPI</test>
+        <test id="2">Program FLASH</test>
+        <test id="3">Program serial</test>
+        <!--<test id="4">Capacitor charge slope.</test>
+        <test id="5">Motor voltage.</test>
+        <test id="6">CPU voltage.</test>
+        <test id="7" crypt="bfg">Find BAUD rate</test>
+        <test id="8" count="1">Read serial through antennae</test>
+        <test id="9" count="1" align="false" tag="false">Open Close test.</test>-->
+	</tests>
+	<reporting secure="false" database="false" csv="false"/>
+</testProfile>

@@ -1,0 +1,4 @@
+copy-binary:
+	../generateTemplate
+	mv template.xml /home/janus/.local/share/SLLjig/delayRelayProfile.xml
+	cp delayRelay.hex /home/janus/.local/share/SLLjig/binaries
